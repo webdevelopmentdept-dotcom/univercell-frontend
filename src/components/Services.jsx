@@ -56,26 +56,6 @@ const services = [
 export default function Services() {
   return (
     <>
-      {/* SEO HELMET */}
-      <Helmet>
-        <title>Services | Univercell Mobile – Radnus Communication</title>
-
-        <meta
-          name="description"
-          content="Explore the services ecosystem of Univercell Mobile, rebranded as Radnus Communication in 2011. Our offerings include technician training, chip-level repair support, OEM solutions, tools & technologies, accessories distribution, and startup support across India."
-        />
-
-        <meta
-          name="keywords"
-          content="Univercell Mobile services, Radnus Communication services, mobile technician training, chip level repair support, OEM mobile accessories, mobile repair tools, startup support PMEGP, mobile business ecosystem India"
-        />
-
-        <link
-          rel="canonical"
-          href="https://www.univercellmobile.co.in/services"
-        />
-      </Helmet>
-
       {/* SERVICES SECTION */}
       <section id="services" className="py-5 bg-white">
         <div className="container">

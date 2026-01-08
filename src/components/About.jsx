@@ -4,24 +4,6 @@ import { Helmet } from "react-helmet-async";
 export default function About() {
   return (
     <>
-      <Helmet>
-        <title>
-          About Univercell Mobile | Rebranded as Radnus Communication (2011)
-        </title>
-
-        <meta
-          name="description"
-          content="Univercell Mobile journey since 2003. Rebranded as Radnus Communication in 2011, offering mobile technician training, chip-level repair services and genuine accessories across India."
-        />
-
-        <meta
-          name="keywords"
-          content="Univercell Mobile Pondicherry, Univercell Mobile Puducherry, Radnus Communication, mobile repair training institute Pondicherry, chip level mobile repair, mobile technician training, mobile accessories distribution, mobile service company India"
-        />
-
-        <link rel="canonical" href="https://www.univercellmobile.co.in/about" />
-      </Helmet>
-
       <section id="about" className="py-4 bg-white">
         <div className="container">
           <div className="row align-items-center gy-3">
