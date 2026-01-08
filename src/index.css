@@ -1,0 +1,253 @@
+/* ===== GLOBAL ===== */
+
+
+
+body {
+  font-family: "Georgia", serif;
+  overflow-x: hidden;
+}
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* ===== ABOUT SECTION ===== */
+#about {
+  scroll-margin-top: 120px; /* navbar overlap fix */
+  position: relative;
+  z-index: 5;
+}
+
+/* ===== MOBILE ABOUT FIX ===== */
+@media (max-width: 768px) {
+  #about {
+    padding-top: 10px;
+  }
+
+  #about .container {
+    max-width: 100% !important;
+  }
+
+  #about img {
+    margin-bottom: 0 !important;
+  }
+}
+
+/* ===== NAVBAR ===== */
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* Active link (desktop) */
+.active-link {
+  color: #ffd6ff !important;
+  position: relative;
+}
+
+.active-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 2px;
+  background: #ffd6ff;
+  border-radius: 10px;
+}
+
+
+/* ===== MOBILE OFFCANVAS MENU ===== */
+.mobile-offcanvas {
+  width: 100% !important;
+  background: linear-gradient(
+    135deg,
+    rgba(75, 79, 216, 0.97),
+    rgba(168, 75, 216, 0.97)
+  ) !important;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 0.45s ease, opacity 0.45s ease;
+}
+.mobile-offcanvas .offcanvas-body {
+  background: transparent;
+}
+
+.mobile-offcanvas.show {
+  transform: translateX(0);
+  opacity: 1;
+}
+/* ===== MOBILE MENU ITEM ANIMATION ===== */
+.mobile-link {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideUp 0.45s ease forwards;
+}
+
+.mobile-link:nth-child(1) { animation-delay: 0.05s; }
+.mobile-link:nth-child(2) { animation-delay: 0.12s; }
+.mobile-link:nth-child(3) { animation-delay: 0.19s; }
+.mobile-link:nth-child(4) { animation-delay: 0.26s; }
+.mobile-cta {
+  opacity: 0;
+  animation: slideUp 0.45s ease forwards;
+  animation-delay: 0.35s;
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Offcanvas overlay */
+.offcanvas-backdrop {
+  background: rgba(0, 0, 0, 0.45);
+}
+
+/* Mobile menu links */
+.mobile-link {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  opacity: 0.85;
+  transition: all 0.3s ease;
+}
+
+.mobile-link:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.mobile-active {
+  color: #ffd6ff;
+}
+
+/* Mobile CTA */
+.mobile-cta {
+  background: #2f80ed;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 12px;
+  border-radius: 999px;
+  margin-top: 24px;
+}
+
+/* Mobile menu layout */
+.mobile-menu-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  gap: 18px;
+}
+
+.offcanvas-header {
+  padding-bottom: 8px;
+}
+
+/* ===== HERO SECTION ===== */
+#home .container {
+  position: relative;
+  z-index: 2;
+}
+
+#home .col-lg-6 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* Diagonal curve */
+.hero-diagonal-curve {
+  position: absolute;
+  bottom: -100px;
+  left: -10%;
+  width: 120%;
+  height: 190px;
+  background: #ffffff;
+  transform: skewY(-4deg);
+  transform-origin: left;
+  z-index: 0;
+}
+
+
+/* ==== LEARN MORE BUTTON – YOUR WEBSITE COLOR ==== */
+.btn-outline-primary {
+  border-color: #d520e6 !important;
+  color: #030205 !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: #4A00E0 !important;
+  border-color: #4A00E0 !important;
+  color: #fff !important;
+}
+
+/* ==== CARD FONT REDUCE ==== */
+.number {
+  font-size: 24px;
+}
+
+.card-title {
+  font-size: 15px;
+}
+
+.card-text {
+  font-size: 13px;
+}
+
+/* ==== IMAGE INNER SPACE ==== */
+.img-wrapper img {
+  border-radius: 10px;
+  height: 160px;
+  object-fit: cover;
+}
+
+
+/* Desktop hero text position */
+@media (min-width: 992px) {
+  .hero-left {
+    transform: translateY(-70px);
+  }
+}
+
+/* ===== MOBILE HERO FIX ===== */
+@media (max-width: 768px) {
+  #home {
+    padding-top: 90px;
+    min-height: auto !important;
+    padding-bottom: 20px;
+  }
+
+  #home img {
+    transform: rotate(0deg);
+    max-height: 360px;
+    margin-bottom: 0 !important;
+  }
+
+  .hero-diagonal-curve,
+  .mobile-hide-curve {
+    display: none !important;
+  }
+}
+
+/* ===== NAVBAR WIDTH ===== */
+@media (min-width: 992px) {
+  .custom-navbar {
+    width: 92%;
+    margin: 18px auto 0 auto;
+    border-radius: 15px 0 15px 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .custom-navbar {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+}
