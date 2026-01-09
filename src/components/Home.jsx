@@ -5,12 +5,13 @@ export default function Home() {
     <>
       <Helmet>
         <title>
-          Univercell Mobile | Mobile Service & Training – Radnus Communication
+          Univercell Mobile Pondicherry | Mobile Service & Training – Radnus
+          Communication
         </title>
 
         <meta
           name="description"
-          content="Univercell Mobile, rebranded as Radnus Communication in 2011. Trusted mobile sales, service and technician training experts across India since 2003."
+          content="Univercell Mobile Pondicherry (Puducherry), rebranded as Radnus Communication in 2011. Trusted mobile sales, service and technician training experts serving Pondicherry and across India since 2003."
         />
 
         <meta
@@ -36,7 +37,7 @@ export default function Home() {
             {/* LEFT CONTENT */}
             <div className="col-lg-6 hero-left">
               <h1 className="fw-bold display-5">
-                <span style={{ color: "#ffffff" }}>UNIVERCELL MOBILE</span>
+                <span style={{ color: "#ffffff" }}>UNIVERCELL MOBILE </span>
               </h1>
 
               <h4 className="mt-2">
@@ -44,6 +45,20 @@ export default function Home() {
                   Rebranded as RADNUS COMMUNICATION in 2011
                 </span>
               </h4>
+              <p
+                className="mt-2"
+                style={{
+                  color: "rgba(255,255,255,0.7)",
+                  maxWidth: "520px",
+                  lineHeight: "1.9",
+                  fontSize: "15px",
+                }}
+              >
+                Univercell Mobile Pondicherry (Puducherry) is a trusted mobile
+                service, chip-level repair and mobile technician training
+                company. Operating since 2003, we proudly serve customers across
+                Pondicherry and Tamil Nadu.
+              </p>
 
               <p
                 className="mt-3"
@@ -53,9 +68,8 @@ export default function Home() {
                   lineHeight: "1.9",
                 }}
               >
-                Trusted mobile sales, service and technician training experts.
-                Same organization, same team and same values — serving customers
-                across India for over two decades.
+                Trusted mobile sales, service and technician training experts
+                with over two decades of industry experience.
               </p>
 
               <a
@@ -75,7 +89,7 @@ export default function Home() {
             <div className="col-lg-6 text-center mt-4 mt-lg-0">
               <img
                 src={image}
-                alt="Univercell Mobile rebranded as Radnus Communication"
+                alt="Univercell Mobile Pondicherry rebranded as Radnus Communication"
                 className="img-fluid   mw-100"
                 style={{
                   transform: "rotate(-4deg)",
