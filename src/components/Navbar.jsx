@@ -33,7 +33,6 @@ export default function Navbar() {
       <nav
         className="navbar navbar-expand-lg fixed-top custom-navbar"
         style={{
-          width: "92%",
           minHeight: "64px",
           marginTop: "18px",
           borderRadius: "15px 0px 15px 0px",
